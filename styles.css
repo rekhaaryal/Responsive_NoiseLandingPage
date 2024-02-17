@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1659282278158-7c0275c43f40?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 50% 60%;
+}
+#bottom{
+    min-height: 20vh;
+}
+
+#overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: grey;
+}
+
+#text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10dvw;
+    color: white;
+}
+
+#textright {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#textright p {
+    font-size: 12px;
+    margin-right:12px ;
+   
+}
+
+#textright i {
+    color: white;
+}
+
+#text h1 {
+    font-weight: bold; /* Example: Use a valid font-weight value */
+    font-size: 6vw;
+}
+
+#bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: blue;
+}
+
+#bone {
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color: aliceblue;
+}
+
+#bone p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#btwo {
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://media.istockphoto.com/id/1191431149/photo/carefree-winter-black-guy-standing-on-his-toes-leaning-backward.jpg?s=612x612&w=is&k=20&c=54rCA47gYPD7V-d9FczdciJygQPCUfBcmxz7Aa5jjug=);
+    background-size: cover;
+    background-position: center;
+}
+
+#bthree {
+    width: 20%;
+    min-height: inherit;
+}
+
+#bthreetop {
+    padding: 20px; /* Corrected padding property */
+    width: 100%;
+    min-height: 20vh;
+    color: white;
+    background-color: orangered;
+}
+
+#bthreetop p {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+#bthreebottom {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.istockphoto.com/id/1255649091/photo/single-sunflower-vibrant-blue-sky-extreme-close-up.jpg?s=612x612&w=is&k=20&c=PkXJXmZFPDs1lXm93FBlcmva-7-DFL5aWIvR5naQiWw=);
+    background-size: cover;
+}
+
+#bfour {
+    
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.notf {
+    margin-top: 20px ;
+    display: block;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+
+.notf #photo {
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+   
+}
+.notf p {
+    
+     display: inline-block;
+     margin-left: 60px;
+     font-size: 12px;
+     text-align: left;
+}
+
+
+@media (max-width: 500px) {
+    #overlay #text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1 {
+        font-size: 10vw;
+    }
+    #bottom {
+        min-height: 20vh;
+    }
+
+    #overlay #text #textright {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #textright p {
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #overlay #text #textright icons {
+        margin-top: 30px;
+    } /* Added the missing closing brace */
+    #bottom {
+        flex-direction: column;
+    }
+    #bone #btwo #bthree #bfour {
+        width: 100%;
+    }
+    #bthree{
+        flex-direction: column;
+    }
+}
